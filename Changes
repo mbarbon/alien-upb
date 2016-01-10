@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.02      2016-01-10 15:46:28 CET
+
+    - Build a newer revision of uPB
+
 0.01      2015-12-31 22:11:51 CET
 
     - First public release
