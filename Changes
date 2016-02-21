@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.03      2016-02-21 15:08:42 CET
+
+    - Newer revision of uPB (GCC 4.4 compatibility)
+
 0.02      2016-01-10 15:46:28 CET
 
     - Build a newer revision of uPB
