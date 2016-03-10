@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.04      2016-03-10 21:27:38 CET
+
+    - Fix configure_requires
+
 0.03      2016-02-21 15:08:42 CET
 
     - Newer revision of uPB (GCC 4.4 compatibility)
