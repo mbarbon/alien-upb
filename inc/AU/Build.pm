@@ -19,8 +19,11 @@ sub new {
     my $self = $class->SUPER::new(
         @_,
         alien_name            => 'uPB', # to stop Alien::Base warnings
+        alien_bin_requires => {
+            'Alien::gmake' => 0.11, # needed for %{gmake} helper
+        },
         alien_build_commands => [
-            "$Config{make} default googlepb USER_CPPFLAGS=\"$protobuf_flags -fPIC\"",
+            "%{gmake} default googlepb USER_CPPFLAGS=\"$protobuf_flags -fPIC\"",
         ],
         alien_install_commands => [
             "$^X ../../scripts/install.pl %s",
