@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.05      2016-05-21 18:31:52 CEST
+
+    - New revision of uPB (changes to JSON support)
+
 0.04      2016-03-10 21:27:38 CET
 
     - Fix configure_requires
