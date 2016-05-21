@@ -11,7 +11,7 @@ use Config;
 use Cwd;
 
 my $base = Cwd::cwd;
-my $commit = 'b0976f608b40fb320263f399e83f4ad9d5f3bd68';
+my $commit = '08bb5e10979c5e6b11d31316e31b7902f08b9e36';
 
 sub new {
     my $class = shift;
@@ -59,7 +59,8 @@ sub alien_generate_manual_pkgconfig {
     my $self = shift;
     my $config = $self->SUPER::alien_generate_manual_pkgconfig(@_);
 
-    $config->{keywords}{Cflags} = '-I${pcfiledir}/include';
+    # -DNDEBUG works around https://github.com/google/upb/issues/63
+    $config->{keywords}{Cflags} = '-I${pcfiledir}/include -DNDEBUG';
     $config->{keywords}{Libs} =
         '-L${pcfiledir}/lib ' .
         join " ", map "-l$_", qw(
