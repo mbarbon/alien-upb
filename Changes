@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.06      2016-07-03 18:47:16 CEST
+
+    - New revision of uPB (propagates map_entry flag)
+
 0.05      2016-05-21 18:31:52 CEST
 
     - New revision of uPB (changes to JSON support)
