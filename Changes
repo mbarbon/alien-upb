@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.07      2016-07-04 16:37:21 CEST
+
+    - uPB requires GNU make (thanks to Slaven Rezić)
+
 0.06      2016-07-03 18:47:16 CEST
 
     - New revision of uPB (propagates map_entry flag)
