@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.08      2016-10-01 20:22:07 CEST
+
+    - Perl 5.8 compatibility
+
 0.07      2016-07-04 16:37:21 CEST
 
     - uPB requires GNU make (thanks to Slaven Rezić)
