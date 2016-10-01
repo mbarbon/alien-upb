@@ -83,15 +83,15 @@ sub _check_flags {
         object_file          => $object,
         extra_compiler_flags =>
             join(' ',
-                 $cxx_flags->{extra_compiler_flags} // '',
-                 $flags{compiler_flags} // ''),
+                 $cxx_flags->{extra_compiler_flags} || '',
+                 $flags{compiler_flags} || '' ),
     );
     $builder->link_executable(
         objects            => [$object],
         extra_linker_flags =>
             join(' ',
-                 $cxx_flags->{extra_linker_flags} // '',
-                 $flags{linker_flags} // ''),
+                 $cxx_flags->{extra_linker_flags} || '',
+                 $flags{linker_flags} || ''),
     );
 
     my $version = qx($exe);
