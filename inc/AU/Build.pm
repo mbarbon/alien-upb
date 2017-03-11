@@ -11,7 +11,7 @@ use Config;
 use Cwd;
 
 my $base = Cwd::cwd;
-my $commit = '888c009fdd8937db67ff0a6772928c686a2aaff5';
+my $commit = '50c11cce165a0e2cda8ebbd70661b27d0b0abd5c';
 
 sub new {
     my $class = shift;
