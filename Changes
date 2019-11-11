@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.13      2019-11-11 22:46:14 CET
+
+    - New revision of uPB (fixes JSON decoding of quoted numeric values)
+
 0.12      2018-11-10 22:41:46 CET
 
     - New revision of uPB (compiles with Protobuf 3.6)
