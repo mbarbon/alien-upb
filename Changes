@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.15      2021-01-25 01:00:25 CET
+
+    - IO::Socket::SSL is required for HTTPS download (thanks to Slaven Rezić)
+
 0.14      2021-01-22 22:31:24 CET
 
     - New revision of uPB (compiles with Protobuf 3.9)
