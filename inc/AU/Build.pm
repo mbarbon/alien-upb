@@ -34,7 +34,7 @@ sub new {
             "$^X ../../scripts/install.pl %s",
         ],
         alien_repository => {
-            protocol        => 'http',
+            protocol        => 'https',
             exact_filename  => "https://github.com/mbarbon/upb/archive/$commit.zip",
         },
     );
